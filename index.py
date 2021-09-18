@@ -63,8 +63,6 @@ def game():
             print(result(combat(perso_elfe, perso_nain)))
         elif choix == "e":
             print(result(combat(perso_nain, perso_elfe)))
-        else:
-            choix = input("choisissez qui attaque en premier (n)ain ou (e)lf : ")
     if perso_nain.deff <= 0:
         clear_screen()
         print(f"Fin du combat c'est {perso_elfe.nom} qui a gagné")
@@ -77,10 +75,3 @@ def game():
     else:
         os.system('exit()')
 game()
-
-
-
-    
-
-
-        
